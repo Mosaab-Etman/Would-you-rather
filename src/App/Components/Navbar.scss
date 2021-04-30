@@ -1,0 +1,9 @@
+.menu_img { border-radius: 50%;}
+
+.logout-btn {
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        background-color: rgb(219, 219, 219) !important;
+    }
+}
