@@ -12,9 +12,7 @@ Also, you need to use the CMD to run the command of installing node modules
 ## Installing
 To install the node modules which are used in this project, run the following command line in your CMD:
 
-```
-npm install
-``
+`npm install`
 
 ## Scripts
 
