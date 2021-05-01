@@ -16,11 +16,11 @@ To install the node modules which are used in this project, run the following co
 
 ## Scripts
 
-### `npm start`
+`npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run build`
+`npm run build`
 Builds the app for production to the `build` folder.\
 
 
