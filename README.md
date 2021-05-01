@@ -1,6 +1,20 @@
-# Getting Started 
+# Would you rather
+This is a game where you answer some questions and you can see the results of other users. Also, you can create questions by yourself
 
-This project was created by "Create-React-app".
+## Getting Started 
+
+This project was created by "Create-React-app". 
+
+## Prerequisites
+You must have nodeJs installed on your computer to install the needed modules
+Also, you need to use the CMD to run the command of installing node modules
+
+## Installing
+To install the node modules which are used in this project, run the following command line in your CMD:
+
+```
+npm install
+``
 
 ## Scripts
 

@@ -17,6 +17,7 @@ const Home = ({ authedUser, getUsers, questions, getQuestions}) => {
     }, [])
     
     const answeredQuestionsKeys = Object.keys(authedUser.answers)
+    
     const answeredQuestions = Object.values(questions).filter(question => {
         return answeredQuestionsKeys.includes(question.id)
     })
@@ -24,11 +25,15 @@ const Home = ({ authedUser, getUsers, questions, getQuestions}) => {
         return !answeredQuestionsKeys.includes(question.id)
         })
 
+    const answeredSorted = answeredQuestions.sort((a, b) => {
+        return b.timestamp - a.timestamp
+    })
+
     const unAnsweredSorted = unAnsweredQuestions.sort((a, b) => {
         return b.timestamp - a.timestamp
     })
 
-    const shownQuestions = questionsCategory === 'answered' ? answeredQuestions : unAnsweredSorted
+    const shownQuestions = questionsCategory === 'answered' ? answeredSorted : unAnsweredSorted
     
     return (
         <React.Fragment>
